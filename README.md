@@ -1,17 +1,35 @@
-# React + Vite
+# TODO List - useState
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Ejercicio de React del Bootcamp Full Stack de The Bridge: una lista de tareas hecha con useState.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Formulario con un input y un botón ADD para añadir tareas
+- El botón ADD solo aparece cuando hay texto escrito
+- Validación: la tarea debe tener al menos 6 caracteres
+- El input se vacía al añadir una tarea
+- Precarga de tareas desde un archivo JSON
+- Botón BORRAR en cada tarea para eliminarla
+- Botón CLEAR para borrar todas las tareas
+- Botón RESET para volver a las tareas iniciales del JSON
 
-## React Compiler
+## Tecnologías
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- uuid (para las keys de la lista)
+- CSS
 
-## Expanding the Oxlint configuration
+## Estructura
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-# -TODO-list---useState
+src/
+  data/tasks.json            -> tareas iniciales
+  components/
+    TodoList/                -> componente padre (estado, formulario y botones)
+      TodoItem/              -> componente hijo (cada tarea)
+  App.jsx
+
+## Cómo arrancarlo
+
+npm install
+npm run dev
