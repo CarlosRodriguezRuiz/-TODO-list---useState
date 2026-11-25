@@ -1,0 +1,53 @@
+.todo_list {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.todo_list form {
+  display: flex;
+  gap: 8px;
+}
+
+.todo_list input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.todo_list form button,
+.todo_list .buttons button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4f46e5;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.todo_list form button:hover,
+.todo_list .buttons button:hover {
+  opacity: 0.85;
+}
+
+.todo_list .buttons {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.todo_list .buttons button {
+  background-color: #6b7280;
+}
+
+.todo_list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 0.9rem;
+}
